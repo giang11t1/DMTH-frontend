@@ -1,0 +1,49 @@
+{% set current_page = 'support-center' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<div class="banner"></div>
+<main class="instruction support-center">
+	<div class="container">
+		<ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>dienmaythienhoa.vn</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>Hỗ trợ khách hàng</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>Giới thiệu công ty</a></li>
+        </ol>
+		<section class="content">
+			<div class="header-content">
+				<h2 class="title">Hỗ trợ khách hàng</h2>
+				<div class="pull-right">
+					<span>08h-22h, Thứ 2 - Chủ nhật</span>
+					<sapn class="color">19001829 (Nhấn phím 1)</sapn>
+				</div>
+			</div>
+			<div class="left-block col-md-3 no-padding-left">
+				<h3 class="title-block">Hỗ trợ khách hàng</h3>
+				<ul class="list-support">
+					<li><a href="javascript:void(0);" class="instruction active">Hướng dẫn mua hàng</a></li>
+					<li><a href="javascript:void(0);" class="transport">Giao hàng, lắp đặt</a></li>
+					<li><a href="javascript:void(0);" class="maintain">Bảo hành, đổi trả</a></li>
+					<li><a href="javascript:void(0);" class="checking">Kiểm tra đơn hàng</a></li>
+					<li><a href="javascript:void(0);" class="list">Danh sách đơn hàng</a></li>
+					<li><a href="javascript:void(0);" class="maintaincenter">Tìm trung tâm bảo hành</a></li>
+				</ul>
+			</div>
+			<div class="right-block col-md-9 no-padding">
+				{% include "block/_block-instruction-order.html" %}
+				{% include "block/_block-giao-hang-lap-dat.html" %}
+				{% include "block/_block-bao-hanh-doi-tra.html" %}
+				{% include "block/_block-trung-tam-bao-hanh.html" %}
+			</div>
+		</section>
+        <!-- start block banner bootom-->
+        <section class="block-banner-bottom">
+            <div class="row">
+                <div class="col-md-5 padding1"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom.jpg" alt="" class="img-responsive"></a></div>
+                <div class="col-md-7 padding2"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom1.jpg" alt="" class="img-responsive"></a></div>
+            </div>
+        </section>
+        <!-- end block banner bottom-->
+	</div>
+</main>
+{% include "block/_block-order-detail-view.html" %}
+{% endblock %}

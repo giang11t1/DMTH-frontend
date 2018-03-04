@@ -1,0 +1,138 @@
+{% set current_page = 'cart-finish' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<div class="banner"></div>
+<main class="main-cart">
+	<div class="container">
+		<ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>dienmaythienhoa.vn</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>Đặt hàng</a></li>
+        </ol>
+        <!-- end breadcrum -->
+        <div class="content-cart-finish">
+        	<div class="text-center">
+        		<img src="assets/images/img-success.png" alt="sucess order">
+        	</div>
+        	<h2 class="title-cart main-title">Đơn hàng của bạn đã được đặt thành công</h2>
+        	<p>Cảm ơn bạn đã đặt hàng tại <b>Trung Tâm Điện Máy Và Nội Thất Thiên Hòa</b>. Mã đơn hàng của bạn là <b class="blue">ABT12345TK</b></p>
+        	<p>Các sản phẩm bạn đã đặt bao gồm: </p>
+
+        	<table class="table tb-cart">
+                <tbody>                    
+                    <tr class="show-item">
+                    	<td colspan="4" class="first-row">
+                    		<table>
+                    			<tbody>
+                    				<tr class="title-tb">
+				                        <td style="padding-left: 15px;">SẢN PHẨM</td>
+				                        <td class="right">SỐ LƯỢNG</td>
+				                        <td class="right">GIÁ Bán</td>
+				                        <td class="right">Tổng TIỀN</td>
+				                    </tr>
+                					<tr>
+				                        <td class="product">
+				                            <div class="wrap-img">
+				                                <img src="assets/images/upload/img-cart.png" alt="">
+				                            </div>
+				                            <div class="descript">
+				                                <a href="#" class="title" title="">Smart Tivi Samsung 55 Inch UA55MU6100 KXXV LED 4K</a>
+				                            </div>
+				                            <div class="gift">
+				                            	<label for="">Sản phẩm khuyến mãi:</label>
+				                            	<div class="ip">
+				                            		<label for="gift1">Bàn ủi hơi nước Electrolux ESI5116</label> 
+				                            	</div>
+				                            	<label for="">Màu sản phẩm: </label>
+				                        		<span>Cam</span>
+				                            </div>
+				                        </td>
+				                        <td class="no-product right">
+				                            <div class="number-cart">1</div>
+				                        </td>
+				                        <td class="right">
+				                            <span class="color price">15.500.000đ</span>
+				                        </td>
+				                        <td class="right"><span class="color price">15.500.000đ</span></td>
+				                    </tr>
+				                    <tr>
+				                        <td class="product">
+				                            <div class="wrap-img">
+				                                <img src="assets/images/upload/img-cart.png" alt="">
+				                            </div>
+				                            <div class="descript">
+				                                <a href="#" class="title" title="">Smart Tivi Samsung 55 Inch UA55MU6100 KXXV LED 4K</a>
+				                            </div>
+				                            <div class="gift">
+				                            	<label for="">Sản phẩm khuyến mãi:</label>
+				                            	<div class="ip">
+				                            		<label for="gift1">Bàn ủi hơi nước Electrolux ESI5116</label> 
+				                            	</div>
+				                            	<label for="">Màu sản phẩm: </label>
+				                        		<span>Cam</span>
+				                            </div>
+				                        </td>
+				                        <td class="no-product right">
+				                            <div class="number-cart">1</div>
+				                        </td>
+				                        <td class="right">
+				                            <span class="color price">15.500.000đ</span>
+				                        </td>
+				                        <td class="right"><span class="color price">15.500.000đ</span></td>
+				                    </tr>
+                    			</tbody>
+                    		</table>
+                    	</td>
+                    </tr>
+                    <tr class="show-item">
+                    	<td colspan="4">
+                    		<h2 class="title-cart">Thông tin đơn hàng</h2>
+                    		<div class="row">
+                    			<label for="">Hình thức thanh toán:</label>
+                    			<div class="detail">Giao hàng và thu tiền tận nơi</div>
+                    		</div>
+                    		<div class="row">
+                    			<label for="">Người nhận hàng:</label>
+                    			<div class="detail">
+                    				<p>Nguyễn Vũ Minh Thiên</p>
+                    			</div>
+                    		</div>
+                    		<div class="row">
+                    			<label for="">Địa chỉ giao hàng:</label>
+                    			<div class="detail">
+                    				<p>123 , Đường Nguyễn Đình Chiểu, Phường 6, Quận 3, Thành Phố Hồ Chí Minh</p>
+                    			</div>
+                    		</div>
+                    		<div class="row">
+                    			<label for="">Xuất hóa đơn:</label>
+                    			<div class="detail">
+                    				<p>Công ty TNHH ABC</p>
+                    				<p>Địa chỉ: 123 , Đường Nguyễn Đình Chiểu, Phường 6, Quận 3, Thành Phố Hồ Chí Minh</p>
+                    				<p>Mã số thuế: 084602156314</p>
+                    			</div>
+                    		</div>
+                    	</td>
+                    </tr>
+                    <tr class="show-item">
+                    	<td colspan="4">
+                    		<h2 class="title-cart">Tổng giá trị đơn hàng</h2>
+                    		<strong for="">Tổng tiền mua sản phẩm: <span class="pull-right color">31.000.000đ</span></strong>
+                    		<strong for="">Phí vận chuyển: <span class="pull-right color">50.000đ</span></strong>
+                    		<strong for="">Mã giảm giá: <span class="pull-right blue">MGHB15831X1</span></strong>
+                    		<strong for="">Tổng giá trị đơn hàng: <span class="pull-right color">30.350.000đ</span></strong>
+                    	</td>
+                    </tr>
+                </tbody>
+            </table>
+			<button class="btn btn-primary">Tiếp tục mua hàng</button>
+        </div>
+        <!-- start block banner bootom-->
+        <section class="block-banner-bottom">
+            <div class="row">
+                <div class="col-md-5 padding1"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom.jpg" alt="" class="img-responsive"></a></div>
+                <div class="col-md-7 padding2"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom1.jpg" alt="" class="img-responsive"></a></div>
+            </div>
+        </section>
+        <!-- end block banner bottom-->
+    </div>
+</main>
+{% endblock %}

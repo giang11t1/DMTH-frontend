@@ -1,0 +1,99 @@
+.popular-product {
+    display: inline-block;
+    margin-left: -7px;
+    margin-right: -7px;
+    width: 101%;
+    .col-product {
+        background: #fff;
+        display: inline-block;
+        /*height: 296px;*/
+        width: 100%;
+        border: @border;
+        margin-bottom: 12px;
+        .transition(all 0.3s ease-in-out 0s);
+        &:hover {
+            border-color: @secondary-color;
+            box-shadow: -2px 2px 19px -2px #c7c6c6;
+        }
+    }
+
+    .wrap-img {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        img {
+            .img;
+        }
+    }
+
+    .wrap-text {
+        padding: 5px 8px;
+        a {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            height: 2.6em;
+            word-wrap: break-word;
+            line-height: 17px;
+            margin-bottom: 5px;
+        }
+        .old-price {
+            font-size: 12px;
+            color: @text-color-3;
+            text-decoration: line-through;
+        }
+        .new-price {
+            font-size: 15px;
+            color: @primary-color;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    }
+
+    .shop-infor {
+        padding: 8px;
+        border-top: @border;
+        a {
+            color: @primary-color;
+            width: 90px;
+            display: inline-block;
+            overflow: hidden;
+            /*word-wrap: break-word;*/
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            max-height: 1.5em;
+        }
+        .vote {
+            display: inline-block;
+            float: right;
+            .fa-star {
+                color: @primary-color;
+            }
+        }
+        .wrap-logo {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            float: left;
+            margin-right: 10px;
+            img {
+                .img;
+            }
+        }
+    }
+}
+/*custome button swipper slider*/
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 3px;
+    border-radius: 0;
+}

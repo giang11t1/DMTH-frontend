@@ -1,0 +1,72 @@
+{% set current_page = 'category-h21' %} {% extends "layout/_layout.html" %} {% block page-container %}
+<div class="banner"></div>
+<main class="main-category">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>dienmaythienhoa.vn</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0);" title>Gia Dụng</a></li>
+        </ol>
+        <!-- end breadcrum -->
+        <div class="row">
+            <div class="col-md-2 width-reset-col-md-2">
+                {% include "block/_block-sidebar-h2.html" %}
+            </div>
+            <!-- sidebar -->
+            <div class="col-md-10 width-reset-col-md-10 main-content-right">
+                <div class="heading-cat">
+                    <h2><b>Đồ dùng nhà bếp</b><span> 328 sản phẩm</span></h2>
+                </div>
+                <div class="clearfix">
+                    <p>Hiển thị sản phẩm theo: </p>
+                    <ul class="list-radio">
+                    	<li>
+                    		<input type="radio" name="display" value="từ thấp đến cao" checked> <span>Từ thấp đến cao</span>
+                    	</li>
+                    	<li>
+                    		<input type="radio" name="display" value="từ cao đến thấp"> <span>Từ cao đến thấp</span>
+                    	</li>
+                    	<li>
+                    		<input type="radio" name="display" value="có quà tặng - khuyến mãi"> <span>Có quà tặng - Khuyến mãi</span>
+                    	</li>
+                    </ul>
+                </div>
+                <div class="banner-cate">
+                    <a href="javascript:void(0);" title="" target="_blank" class="link-img"><img src="assets/images/banner/banner-category.jpg" alt=""></a>
+                </div>
+                <div class="block-buy block-devices">
+                    <div class="row">
+                        {% for x in [1,2,3,4,5,6,7,8,9,10,11,12] %}
+                        <div class="col-md-4">
+                            <div class="box-buy">
+                                <a href="javascript:void(0);" title="" class="link-img">
+                                    <img src="assets/images/product/brand2.jpg" alt="" class="img-responsive">
+                                    <span class="brand"><span>Samsung</span></span></a>
+                                    <span class="sale-off">-35%</span>
+                                <a href="javascript:void(0);" title="" class="link-cart"><span class="total"><span class="icon icon-cart"></span><span class="text">Mua ngay</span></span></a>
+                                <div class="content">
+                                    <p>Smart Tivi Samsung UA40MU6103KXXV LED 4K </p>
+                                    <div class="price"><span class="sale-price">21.890.000<sup>đ</sup></span><span class="real-price">21.890.000<sup>đ</sup></span></div>
+                                    <div class="sale-anounce"><span class="icon icon-gift"></span> Có 1 khuyến mãi</div>
+                                    <div class="installment"><span>Trả góp 0%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-pagi pull-right">
+        	{% include "block/_pagination.html" %}
+        </div>
+        <!-- start block banner bootom-->
+        <section class="block-banner-bottom">
+            <div class="row">
+                <div class="col-md-5 padding1"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom.jpg" alt="" class="img-responsive"></a></div>
+                <div class="col-md-7 padding2"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom1.jpg" alt="" class="img-responsive"></a></div>
+            </div>
+        </section>
+        <!-- end block banner bottom-->
+    </div>
+</main>
+{% endblock %}

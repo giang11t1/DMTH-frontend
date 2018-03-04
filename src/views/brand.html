@@ -1,0 +1,102 @@
+{% set current_page = 'brand' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<div class="banner"></div>
+<main class="main-brand">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>dienmaythienhoa.vn</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>Thương hiệu</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0);" title>Samsung</a></li>
+        </ol>
+        <!-- end breadcrum -->
+        <div class="row">
+            <div class="col-md-2 width-reset-col-md-2">
+                {% include "block/_block-sidebar-brand.html" %}
+            </div>
+            <!-- sidebar -->
+            <div class="col-md-10 width-reset-col-md-10 main-content-right">
+                <div class="introduce-brand">
+                    <div class="inside">
+                        <span class="content">Tập đoàn Samsung là một tập đoàn đa quốc gia của Hàn Quốc có tổng hành dinh đặt tại Samsung Town, Seoul. Tập đoàn có nhiều công ty con, hầu hết hoạt động dưới thương hiệu Samsung, là tập đoàn thương mại (chaebol) lớn nhất Hàn Quốc.
+                        Samsung được sáng lập bởi Lee Byung-chul năm 1938, được khởi đầu là một công ty buôn bán nhỏ. 3 thập kỉ sau, tập đoàn Samsung đa dạng hóa các ngành nghề bao gồm chế biến thực phẩm, dệt may, bảo hiểm, chứng khoán và bán lẻ. Samsung tham gia vào lĩnh vực công nghiệp điện tử vào cuối thập kỉ 60, xây dựng và công nghiệp đóng tàu vào giữa thập kỉ 70. Năm 1987, Samsung tách ra thành 4 tập...</span>
+                        <a href="javascript:void(0);" class="link" data-toggle="modal" data-target="#myModal">Xem thêm >></a>
+                    </div>
+                </div>
+
+                <div class="heading-cat">
+                    <h2><b>Tivi</b><span> 123 sản phẩm</span></h2>
+                </div>
+                <div class="clearfix">
+                    <p>Hiển thị sản phẩm theo: </p>
+                    <ul class="list-radio">
+                        <li>
+                            <input type="radio" name="display" value="từ thấp đến cao" checked> <span>Từ thấp đến cao</span>
+                        </li>
+                        <li>
+                            <input type="radio" name="display" value="từ cao đến thấp"> <span>Từ cao đến thấp</span>
+                        </li>
+                        <li>
+                            <input type="radio" name="display" value="có quà tặng - khuyến mãi"> <span>Có quà tặng - Khuyến mãi</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner-cate">
+                    <a href="javascript:void(0);" title="" target="_blank" class="link-img"><img src="assets/images/banner/banner-brand.jpg" alt=""></a>
+                </div>
+                <div class="block-buy block-devices">
+                    <div class="row">
+                        {% for x in [1,2,3,4,5,6,7,8,9,10,11,12] %}
+                        <div class="col-md-4">
+                            <div class="box-buy">
+                                <a href="javascript:void(0);" title="" class="link-img">
+                                    <img src="assets/images/product/brand2.jpg" alt="" class="img-responsive">
+                                    <span class="brand"><span>Samsung</span></span></a>
+                                <span class="sale-off">-35%</span>
+                                <a href="javascript:void(0);" title="" class="link-cart"><span class="total"><span class="icon icon-cart"></span><span class="text">Mua ngay</span></span></a>
+                                <div class="content">
+                                    <p>Smart Tivi Samsung UA40MU6103KXXV LED 4K </p>
+                                    <div class="price"><span class="sale-price">21.890.000<sup>đ</sup></span><span class="real-price">21.890.000<sup>đ</sup></span></div>
+                                    <div class="sale-anounce"><span class="icon icon-gift"></span> Có 1 khuyến mãi</div>
+                                    <div class="installment"><span>Trả góp 0%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-pagi pull-right">
+            {% include "block/_pagination.html" %}
+        </div>
+        <!-- start block banner bootom-->
+        <section class="block-banner-bottom">
+            <div class="row">
+                <div class="col-md-5 padding1"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom.jpg" alt="" class="img-responsive"></a></div>
+                <div class="col-md-7 padding2"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom1.jpg" alt="" class="img-responsive"></a></div>
+            </div>
+        </section>
+        <!-- end block banner bottom-->
+
+    </div>
+</main>
+<!-- Modal -->
+<div id="myModal" class="modal fade modal-brand" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body introduce-brand">
+                <div class="inside">
+                    <p>Tập đoàn Samsung là một tập đoàn đa quốc gia của Hàn Quốc có tổng hành dinh đặt tại Samsung Town, Seoul. Tập đoàn có nhiều công ty con, hầu hết hoạt động dưới thương hiệu Samsung, là tập đoàn thương mại (chaebol) lớn nhất Hàn Quốc.
+                    Samsung được sáng lập bởi Lee Byung-chul năm 1938, được khởi đầu là một công ty buôn bán nhỏ. 3 thập kỉ sau, tập đoàn Samsung đa dạng hóa các ngành nghề bao gồm chế biến thực phẩm, dệt may, bảo hiểm, chứng khoán và bán lẻ. Samsung tham gia vào lĩnh vực công nghiệp điện tử vào cuối thập kỉ 60, xây dựng và công nghiệp đóng tàu vào giữa thập kỉ 70. Năm 1987, Samsung tách ra thành 4 tập
+                    Samsung được sáng lập bởi Lee Byung-chul năm 1938, được khởi đầu là một công ty buôn bán nhỏ. 3 thập kỉ sau, tập đoàn Samsung đa dạng hóa các ngành nghề bao gồm chế biến thực phẩm, dệt may, bảo hiểm, chứng khoán và bán lẻ. Samsung tham gia vào lĩnh vực công nghiệp điện tử vào cuối thập kỉ 60, xây dựng và công nghiệp đóng tàu vào giữa thập kỉ 70. Năm 1987, Samsung tách ra thành 4 tập
+                    Samsung được sáng lập bởi Lee Byung-chul năm 1938, được khởi đầu là một công ty buôn bán nhỏ. 3 thập kỉ sau, tập đoàn Samsung đa dạng hóa các ngành nghề bao gồm chế biến thực phẩm, dệt may, bảo hiểm, chứng khoán và bán lẻ. Samsung tham gia vào lĩnh vực công nghiệp điện tử vào cuối thập kỉ 60, xây dựng và công nghiệp đóng tàu vào giữa thập kỉ 70. Năm 1987, Samsung tách ra thành 4 tập</p>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end popup -->
+{% endblock %}

@@ -1,0 +1,35 @@
+<!--mobile-menu-->
+{% block mobile-menu%} {% include "../block/_mobile-menu.html" %} {% endblock %} {% extends "_layout-base.html" %}
+<!--header-->
+{% block header%} {% include "../block/_header.html" %} {% endblock %}
+<!--page-container-->
+{% block page-container %}{% endblock %}
+<!--footer-->
+{% block footer%} {% include "../block/_footer.html" %} {% endblock %}
+<!--modal-->
+{% block modal%}
+<!-- modal forget password -->
+<div id="forgetpass-modal" class="modal forgetpass-modal fade" role="modal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close remove_text" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-close" aria-hidden="true"></i></span></button>
+                <h4 class="modal-title">Quên mật khẩu</h4>
+            </div>
+            <div class="modal-body">
+                <div class="forgetpass-form">
+                    <p>Vui lòng nhập Email để cập nhật lại mật khẩu trên hệ thống myFace.</p>
+                    <div class="form-group">
+                        <input type="email" name="intEmail" class="form-control" placeholder="Nhập email của bạn">
+                        <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnForgotPassword" class="btn btn-primary" value="Lấy lại mật khẩu">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+{% endblock %}

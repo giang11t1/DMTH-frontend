@@ -1,0 +1,346 @@
+{% set current_page = 'cart' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<div class="banner"></div>
+<main class="main-cart">
+	<div class="container">
+		<ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>dienmaythienhoa.vn</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>Đặt hàng</a></li>
+        </ol>
+        <!-- end breadcrum -->
+        <div class="row">
+        	<div class="col-md-8 left-cart LeftCart">
+        		<h2 class="title-cart">Giỏ hàng của bạn <span class="no-product">(Hiện có 02 sản phẩm)</span></h2>
+        		<!-- show new error box in cart  -->
+                <div class="show-error-box box-bg">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <p class="nomal">Sản phẩm: <span>Nồi Lẩu Điện Argo AHP-304</span> không đủ số lượng bạn chọn. Bạn vui lòng chọn lại số lượng mua.</p>
+                    <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                </div>
+                 <!-- show error box in cart  -->
+                <div class="show-error-box">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <p class="error">Giỏ hàng của bạn có sản phẩm không còn tại kho, vui lòng kiểm tra lại giỏ hàng</p>
+                    <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                </div>
+                <!-- in case nomal -->
+                <div class="show-error-box">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <p class="nomal"> <span>Giỏ hàng của bạn có sản phẩm không còn tại kho</span>, vui lòng kiểm tra lại giỏ hàng</p>
+                    <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                </div>
+        		<table class="table tb-cart">
+                    <tbody>
+                        <tr class="title-tb">
+                            <td style="padding-left: 15px;">SẢN PHẨM</td>
+                            <td class="right">SỐ LƯỢNG</td>
+                            <td class="right">GIÁ Bán</td>
+                            <td class="right">Tổng TIỀN</td>
+                        </tr>
+                        <tr>
+                            <td class="product">
+                                <div class="wrap-img">
+                                    <img src="assets/images/upload/img-cart.png" alt="">
+                                </div>
+                                <div class="descript">
+                                    <a href="#" class="title" title="">Smart Tivi Samsung 55 Inch UA55MU6100 KXXV LED 4K</a>
+                                </div>
+                                <div class="gift">
+                                	<label for="">Chọn thêm khuyến mãi</label>
+                                	<div class="ip">
+                                		<input type="radio" name="gift" id="gift1"><label for="gift1">Bàn ủi hơi nước Electrolux ESI5116</label> 
+                                	</div>
+                                	<div class="ip">
+                                		<input type="radio" name="gift" id="gift2"><label for="gift2">Bộ lau nhà lồng Inox Delites 209</label>
+                                	</div>
+                                	<label for="">Chọn thêm màu sản phẩm</label>
+                                	<div class="choose-color color1">
+                                		<span class="active">Cam</span>
+                                		<span>Vàng</span>
+                                	</div>
+                                </div>
+                            </td>
+                            <td class="no-product right">
+                                <input type="number" class="number-cart" value="1"></input>
+                                <div class="icon-arrow">
+		                            <i class="fa fa-caret-up" aria-hidden="true"></i>
+		                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+		                        </div>
+                                <div class="remove">
+                                    <i class="fa fa-times" aria-hidden="true"></i> <span>Bỏ sản phẩm</span>
+                                </div>
+                            </td>
+                            <td class="right">
+                                <span class="color price">15.500.000đ</span>
+                            </td>
+                            <td class="right"><span class="color price">15.500.000đ</span></td>
+                        </tr>
+                        <tr>
+                            <td class="product">
+                                <div class="wrap-img">
+                                    <img src="assets/images/upload/img-cart.png" alt="">
+                                </div>
+                                <div class="descript">
+                                    <a href="#" class="title" title="">Smart Tivi Samsung 55 Inch UA55MU6100 KXXV LED 4K</a>
+                                </div>
+                                <div class="gift">
+                                	<label for="">Sản phẩm này được tặng kèm:</label>
+                                	<p>Bàn ủi hơi nước Electrolux ESI5116</p> 
+                                	<label for="">Chọn thêm màu sản phẩm</label>
+                                	<div class="choose-color color2">
+                                		<span>Cam</span>
+                                		<span class="active">Vàng</span>
+                                	</div>
+                                </div>
+                            </td>
+                            <td class="no-product right">
+                                <input type="number" class="number-cart" value="1"></input>
+                                <div class="icon-arrow">
+		                            <i class="fa fa-caret-up" aria-hidden="true"></i>
+		                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+		                        </div>
+                                <div class="remove">
+                                    <i class="fa fa-times" aria-hidden="true"></i> <span>Bỏ sản phẩm</span>
+                                </div>
+                            </td>
+                            <td class="right">
+                                <span class="color price">15.500.000đ</span>
+                            </td>
+                            <td class="right"><span class="color price">15.500.000đ</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="tb-cart block-cart">
+                	<div class="head-block">Thông tin giao hàng</div>
+					<div class="body-block">
+						<div class="block-item">
+	                		<div class="form-group">
+	                			<label for="">Họ tên người nhận hàng <span class="color">(*)</span></label>
+	                			<div class="row">
+	                				<div class="col-md-2 no-padding">
+	                					<div class="wrap-select">
+	                						<select name="" id="" class="form-control">
+		                						<option value="">Anh</option>
+		                						<option value="">Chị</option>
+		                					</select>
+		                					<i class="fa fa-angle-down" aria-hidden="true"></i>
+	                					</div>
+	                				</div>
+	                				<div class="col-md-10 no-padding-right">
+	                					<input type="text" class="form-control" placeholder="Nhập họ tên người nhận hàng">
+	                					<label for="" class="error">Nhập họ tên</label>
+	                				</div>
+	                			</div>
+	                		</div>
+	                		<div class="form-group">
+	                			<label for="">Số điện thoại <span class="color">(*)</span></label>
+	        					<input type="text" class="form-control" placeholder="Nhập số điện thoại người nhận hàng">
+	        					<label for="" class="error">Nhập số điện thoại người nhận hàng</label>
+	                		</div>
+	                		<div class="form-group">
+	                			<label for="">Địa chỉ email <span class="color">(*)</span></label>
+	        					<input type="text" class="form-control" placeholder="Vd: dienmaythienhoa@gmail.com">
+	        					<label for="" class="error">Nhập địa chỉ email người nhận hàng</label>
+	                		</div>
+	                	</div>
+	                	<div class="block-item">
+	                		<label for=""><span class="blue">Để được phục vụ nhanh hơn,</span> hãy chọn thêm:</label>
+	                		<div class="type">
+	                			<input type="radio" name="type" id="home" checked value="home"> <label for="home">Giao hàng tận nhà / Công ty</label>
+	                			<input type="radio" name="type" id="supermarket" value="supermarket"> <label for="supermarket">Nhận hàng tại Trung tâm / Cửa hàng Điện máy - Nội thất Thiên Hòa</label>
+	                		</div>
+	                		<div class="address address_home">
+	                			<div class="form-group">
+	                				<div class="col-md-6 no-padding-left">
+	                					<label for="">Tỉnh/ Thành phố</label>
+	                					<div class="wrap-select bootstrap-multi-select-box">
+		                					<select class="form-control data-product selectpicker" multiple data-actions-box="true" data-live-search="true" title="Chọn Tỉnh/ Thành phố">
+		                                        <option>Hồ Chí Minh</option>
+		                                        <option>Bình Dương</option>
+		                                        <option>Nghệ an</option>
+		                                        <option>Đà Nẵng</option>
+		                                        <option>Hồ chí minh</option>
+		                                        <option>Hà nội</option>
+		                                        <option>Nghệ an</option>
+		                                        <option>Đà Nẵng</option>
+		                                        <option>Hồ chí minh</option>
+		                                        <option>Hà nội</option>
+		                                        <option>Nghệ an</option>
+		                                        <option>Đà Nẵng</option>
+		                                        <option>Hồ chí minh</option>
+		                                        <option>Hà nội</option>
+		                                        <option>Nghệ an</option>
+		                                        <option>Đà Nẵng</option>
+		                                        <option>Hồ chí minh</option>
+		                                        <option>Hà nội</option>
+		                                        <option>Nghệ an</option>
+		                                        <option>Đà Nẵng</option>
+		                                    </select>
+		                					<i class="fa fa-angle-down" aria-hidden="true"></i>
+		                				</div>
+		                				<label for="" class="error">Chọn Tỉnh/ Thành</label>
+	                				</div>
+	                				<div class="col-md-6 no-padding-right">
+	                					<label for="">Quận/ Huyện</label>
+	                					<div class="wrap-select">
+		                					<select name="" id="" class="form-control">
+		                						<option value="">Chọn Quận/ Huyện</option>
+		                						<option value="">Gò Vấp</option>
+		                						<option value="">Tân Bình</option>
+		                					</select>
+		                					<i class="fa fa-angle-down" aria-hidden="true"></i>
+		                				</div>
+		                				<label for="" class="error">Chọn Quận/ Huyện</label>
+	                				</div>
+	                			</div>
+	                			<div class="form-group">
+	                				<div class="col-md-6 no-padding-left">
+	                					<label for="">Phường/ Xã</label>
+	                					<div class="wrap-select">
+		                					<select name="" id="" class="form-control">
+		                						<option value="">Chọn Phường/ Xã</option>
+		                						<option value="">Phường 4</option>
+		                						<option value="">Phường 1</option>
+		                					</select>
+		                					<i class="fa fa-angle-down" aria-hidden="true"></i>
+		                				</div>
+		                				<label for="" class="error">Chọn Phường/ Xã</label>
+	                				</div>
+	                				<div class="col-md-6 no-padding-right">
+	                					<label for="">Địa chỉ</label>
+	                					<input type="text" class="form-control" placeholder="Đường/ Ngõ/ Hẻm/ Số nhà">
+	                					<label for="" class="error">Nhập địa chỉ</label>
+	                				</div>
+	                			</div>
+	                		</div>
+	                		<div class="address address_supermaket">
+	                			<div class="form-group">
+	                				<div class="col-md-6 no-padding-left">
+	                					<label for="">Tỉnh/ Thành phố</label>
+	                					<div class="wrap-select">
+		                					<select name="" id="" class="form-control">
+		                						<option value="">Chọn Tỉnh/ Thành phố</option>
+		                						<option value="">Hồ Chí Minh</option>
+		                						<option value="">Hà Nôi</option>
+		                					</select>
+		                					<i class="fa fa-angle-down" aria-hidden="true"></i>
+		                				</div>
+		                				<label for="" class="error">Chọn Tỉnh/ Thành phố</label>
+	                				</div>
+	                				<div class="col-md-6 no-padding-right">
+	                					<label for="">Quận/ Huyện</label>
+	                					<div class="wrap-select">
+		                					<select name="" id="" class="form-control">
+		                						<option value="">Chọn Quận/ Huyện</option>
+		                						<option value="">Gò Vấp</option>
+		                						<option value="">Tân Bình</option>
+		                					</select>
+		                					<i class="fa fa-angle-down" aria-hidden="true"></i>
+		                				</div>
+		                				<label for="" class="error">Chọn Quận/ Huyện</label>
+	                				</div>
+	                			</div>
+	                			<ul class="list-super">
+	                				<li>
+	                					<input type="radio" name="item" id="item1" checked value=""> 
+	                					<div class="text">
+	                						<label for="item1">Trung tâm Thiên Hòa Q10</label>
+	                						<span class="note">Địa chỉ: số 277B Cách Mạng Tháng Tám Phường 12, Quận 10, Tp HCM</span>
+	                					</div>
+	                				</li>
+	                				<li>
+	                					<input type="radio" name="item" id="item2" value=""> 
+	                					<div class="text">
+	                						<label for="item2">Trung tâm Thiên Hòa Q12</label>
+	                						<span class="note">Địa chỉ: Số 2-6B Trường Chinh, Phường Tân Thới Nhất, Quận 12, Tp HCM </span>
+	                					</div>
+	                				</li>
+	                				<li>
+	                					<input type="radio" name="item" id="item3" value=""> 
+	                					<div class="text">
+	                						<label for="item3">Trung tâm Thiên Hòa Tân Phú</label>
+	                						<span class="note">Địa chỉ: 659 Âu Cơ, Phường Tân Thành Quận Tân Phú, Tp HCM </span>
+	                					</div>
+	                				</li>
+	                			</ul>
+	                		</div>
+	                	</div>
+	                	<div class="block-item">
+	                		<div class="checkbox">
+	                            <input id="check" type="checkbox" name="check" value="check1" data-toggle="collapse" data-target="#VAT-info" class="collapsed" aria-expanded="false">
+	                            <label for="check">Xuất hóa đơn công ty</label>
+	                        </div>
+	                        <div class="collapse infor" id="VAT-info" aria-expanded="false">
+	                        	<div class="form-group">
+	                        		<input type="text" class="form-control" placeholder="Tên công ty">
+	                        		<label for="" class="error">Nhập tên công ty</label>
+	                        	</div>
+	                        	<div class="form-group">
+	                        		<div class="col-md-6 no-padding-left">
+		                        		<input type="text" class="form-control" placeholder="Địa chỉ công ty">
+		                        		<label for="" class="error">Nhập địa chỉ công ty</label>
+		                        	</div>
+		                        	<div class="col-md-6 no-padding-right">
+		                        		<input type="text" class="form-control" placeholder="Mã số thuế">
+		                        		<label for="" class="error">Nhập mã số thuế</label>
+		                        	</div>
+	                        	</div>
+	                        </div>
+	                	</div>
+					</div>
+                </div>
+        	</div>
+        	<div class="col-md-4 right-cart fixedright" data-spy="affix" data-offset-top="80" data-offset-bottom="570">
+    			<a href="" class="link-buy pull-right">Mua thêm sản phẩm khác</a>
+        		<table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="title-right">Thông tin đơn hàng</td>
+                        </tr>
+                        <tr>
+                            <td class="line">
+                                <p><b>Tổng tiền sản phẩm:</b> <span class="color price">31.000.000đ</span></p>
+                                <p><b>Phí vận chuyển: </b><span class="color price">50.000đ</span></p>
+                                <div class="code-sale">
+                                	<b class="blue">Sử dụng mã giảm giá</b>
+                                	<div class="form-code">
+                                		<input type="text" class="form-control" placeholder="Nhập mã giảm giá">
+                                		<button class="btn-sale" type="button">Áp dụng</button>
+                                	</div>
+                                </div>
+                                <p><b>Giá trị giảm giá:</b> <span class="color price">500.000đ</span></p>
+                                <p><b>Tổng tiền đơn hàng:</b> <span class="color price">30.550.000đ</span>
+                                <span class="note">(Sau áp dụng mã giảm giá/ Khuyến mãi)</span>
+                                </p>
+                                <!-- gift for all order -->
+                                <div class="note-gift">
+                                	<i class="fa fa-gift" aria-hidden="true"></i>
+                                	<p>Bạn được tặng 1 bàn ủi Philip cho đơn hàng này</p>
+                                </div>
+                                <!--  -->
+                                <div class="note-textarea">
+                                	<label for="">Ghi chú đơn hàng</label>
+                                	<textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn-cart">
+                	<button class="btn btn-second">Thanh toán khi nhận hàng</button>
+                	<button class="btn btn-primary">Thanh toán online <span>Bằng thẻ Visa, MasterCard, Internet Banking</span></button>
+                </div>
+        	</div>
+        </div>
+        <!-- start block banner bootom-->
+        <section class="block-banner-bottom">
+            <div class="row">
+                <div class="col-md-5 padding1"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom.jpg" alt="" class="img-responsive"></a></div>
+                <div class="col-md-7 padding2"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom1.jpg" alt="" class="img-responsive"></a></div>
+            </div>
+        </section>
+        <!-- end block banner bottom-->
+	</div>
+</main>
+{% endblock %}

@@ -1,0 +1,117 @@
+.hamburger-btn {
+    width: 24px;
+    height: 60px;
+    border: 0;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    background: url(../images/icons/hamburger.png) no-repeat;
+    background-position: center center;
+}
+.open-sidebar {
+    overflow: hidden;
+    .overlay {
+        display: block;
+    }
+    .mobile-sidebar {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .sidebar-close {
+        display: block;
+    }
+}
+.overlay {
+    position: fixed;
+    z-index: 1035;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.mobile-sidebar {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    z-index: 1040;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),-webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #fff;
+}
+.sidebar-header {
+    height: 60px;
+    .nav-logo {
+        padding: 14px 20px;
+        display: inline-block;
+        a {
+            width: 95px;
+            display: block;
+        }
+    }
+}
+.sidebar-close {
+    display: none;
+    top: 0;
+    right: 0;
+    width: 53px;
+    height: 60px;
+    background: url('../images/icons/back-to-main.png') no-repeat center center;
+    position: absolute;
+    text-align: center;
+}
+.sidebar-container {
+    height: 100%;
+    padding-bottom: 6rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    .verticle-nav {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+            width: 100%;
+            a {
+                width: 100%;
+                font-weight: 600;
+                color: @text-color-2;
+                padding: 10px 20px;
+                display: block;
+            }
+            &.active {
+                a {
+                    color: @text-color-1;
+                }
+            }
+        }
+    }
+    .menu-mobile-list {
+        border-bottom: @border;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (min-width : @screen-lg-min) {
+    .hamburger-btn,
+    .overlay {
+        display: none !important;
+    }
+    .open-sidebar {
+        overflow: scroll;
+        .mobile-sidebar {
+            transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+        }
+    }
+}

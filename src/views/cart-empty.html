@@ -1,0 +1,29 @@
+{% set current_page = 'cart-finish' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<div class="banner"></div>
+<main class="main-cart">
+	<div class="container">
+		<ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>dienmaythienhoa.vn</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>Đặt hàng</a></li>
+        </ol>
+	    <div class="content-empty">
+	    	<div class="text-center">
+        		<img src="assets/images/img-fail.png" alt="fail order">
+        	</div>
+        	<h2 class="title-fail">Rất tiếc, giỏ hàng của bạn hiện đang trống</h2>
+        	<p>Hãy nhanh tay tìm kiếm & chọn những sản phẩm yêu thích của bạn</p>
+        	<button class="btn-primary">Tiếp tục mua hàng</button>
+	    </div>
+	    <!-- start block banner bootom-->
+	    <section class="block-banner-bottom">
+	        <div class="row">
+	            <div class="col-md-5 padding1"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom.jpg" alt="" class="img-responsive"></a></div>
+	            <div class="col-md-7 padding2"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom1.jpg" alt="" class="img-responsive"></a></div>
+	        </div>
+	    </section>
+	    <!-- end block banner bottom-->
+    </div>
+</main>
+{% endblock %}

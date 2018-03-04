@@ -1,0 +1,41 @@
+<a href="#" class="overlay sidebar-close-bg"></a>
+<div class="mobile-sidebar">
+    <div class="sidebar-header">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="myface" >
+            </a>
+        </div>
+        <a class="sidebar-close" href="#"></a>
+    </div>
+    <div class="sidebar-container">
+        <ul class="verticle-nav menu-mobile-list">
+            <li class="{% if current_page == 'features' %}active{% endif %}">
+                <a href="features.html">Tính năng</a>
+            </li>
+            <li class="{% if current_page == 'services' %}active{% endif %}">
+                <a href="services.html">Gói dịch vụ</a>
+            </li>
+            <li class="{% if current_page == 'guideline' %}active{% endif %}">
+                <a href="guideline.html">Hướng dẫn sử dụng</a>
+            </li>
+            <li class="{% if current_page == 'news' %}active{% endif %}">
+                <a href="news.html">Tin tức</a>
+            </li>
+            <li class="{% if current_page == 'blog' %}active{% endif %}">
+                <a href="https://myface.vn/blog_share">Blog – Chia sẻ</a>
+            </li>
+            <li class="{% if current_page == 'ctv' %}active{% endif %}">
+                <a href="ctv.html">Cộng tác viên bán hàng</a>
+            </li>
+        </ul>
+        <ul class="verticle-nav register-group">
+            <li>
+                <a href="https://my.myface.vn/admin/auth/login.html" target="_blank">Đăng nhập</a>
+            </li>
+            <li>
+                <a href="https://my.myface.vn/admin/auth/register.html" target="_blank">Đăng ký</a>
+            </li>
+        </ul>
+    </div>
+</div>

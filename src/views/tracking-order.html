@@ -1,0 +1,65 @@
+{% set current_page = 'tracking-order' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<div class="banner"></div>
+<main class="main-cart">
+	<div class="container">
+		<ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>dienmaythienhoa.vn</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>Kiểm tra đơn hàng</a></li>
+        </ol>
+        <!-- end breadcrum -->
+        <div class="input-checking">
+        	<label for="">Bạn vui lòng nhập mã đơn hàng: </label>
+        	<input type="text" class="form-control">
+        	<button class="btn btn-primary">Kiểm tra đơn hàng</button>
+        </div>
+		<!-- end checking -->
+		<div class="tracking-order">
+			<div class="progress-tracking">
+				<label for="">Tiến trình xử lý đơn hàng: <b class="blue">MDH02157901</b></label>
+				<ul id="progressbar">
+	                <li class="active">
+	                	<div class="text text-center">
+	                		<label for="">Đặt hàng thành công</label>
+	                		<span>03/12/2017 - 15:30:53</span>
+	                	</div>
+	                </li>
+	                <li class="active">
+	                	<div class="text text-center">
+	                		<label for="">Đơn hàng đang xử lý</label>
+	                		<span>04/12/2017 - 08:15:20</span>
+	                		<span>Nhân viên xử lý: Nguyễn Quỳnh Hoa</span>
+	                	</div>
+	                </li>
+	                <li >
+	                	<div class="text text-center">
+	                		<label for="">Đang giao hàng</label>
+	                		<span>04/12/2017 - 13:45:35</span>
+	                	</div>
+	                </li>
+	                <li >
+	                	<div class="text text-center">
+	                		<label for="">Giao hàng thành công</label>
+	                		<span>04/12/2017 - 14:20:15</span>
+	                	</div>
+	                </li>
+	            </ul>
+			</div>
+			<!-- end progress tracking -->
+	        <div class="content-cart-finish">
+	        	<label for="">Trạng thái đơn hàng: <b class="blue">Đơn hàng đang xử lý</b></label>
+	        	{% include "block/_block-cart-finish.html" %}
+	        </div>   
+		</div>		     
+		<!-- start block banner bootom-->
+        <section class="block-banner-bottom">
+            <div class="row">
+                <div class="col-md-5 padding1"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom.jpg" alt="" class="img-responsive"></a></div>
+                <div class="col-md-7 padding2"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom1.jpg" alt="" class="img-responsive"></a></div>
+            </div>
+        </section>
+        <!-- end block banner bottom-->
+	</div>
+</main>
+{% endblock %}

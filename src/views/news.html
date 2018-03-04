@@ -1,0 +1,118 @@
+{% set current_page = 'TH-information' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<div class="banner"></div>
+	<main class="instruction news">
+	<div class="container">
+		<ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>dienmaythienhoa.vn</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>Tin tức</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>Tin khuyến mãi</a></li>
+        </ol>
+		<section class="content">
+			<div class="header-content">
+				<h2 class="title">Hỗ trợ khách hàng</h2>
+				<div class="pull-right">
+					<span>08h-22h, Thứ 2 - Chủ nhật</span>
+					<sapn class="color">19001829 (Nhấn phím 1)</sapn>
+				</div>
+			</div>
+			<div class="left-block col-md-3 no-padding-left">
+				<h3 class="title-block">Tin tức</h3>
+				<ul class="list-support">
+					<li><a href="javascript:void(0);" class="sales-news active">Tin khuyến mãi</a></li>
+					<li><a href="javascript:void(0);">Tin khác</a></li>
+				</ul>
+			</div>
+			<div class="right-block col-md-9 no-padding">
+				<div class="SaleNews sales-news">
+					<h3 class="title-content">Tin khuyến mãi</h3>
+					<ul class="list-news">
+						{% for x in [1,2,3,4,5] %}
+						<li>
+							<div class="col-md-3 no-padding wrap-img">
+								<a href="javascript:void(0);"><img src="assets/images/upload/img-news.png" alt="img news"></a>
+							</div>
+							<div class="col-md-9 no-padding-right right-item">
+								<a href="javascript:void(0);" class="title-news">3 bước sử dụng Smartphone Android điều khiển tivi vô cùng tiện dụng</a>
+								<p class="text">Điều khiển tivi bằng điện thoại là một trong những tính năng nổi bật được quan tâm khi dùng Smart tivi. Nếu bạn sở hữu một chiếc điện thoại Android, bạn có thể dễ dàng dùng chúng thay thế cho remote tivi qua 3 bước đơn giản dưới đây.</p>
+								<div class="bottom">
+									<div class="left">
+										<div class="wrap-icons"><i class="icon-comment">&nbsp</i><span>547 Bình luận</span></div>
+										<div class="wrap-icons"><i class="fa fa-eye" aria-hidden="true"></i> <span>371.841 lượt xem</span></div>
+									</div>
+									<a href="javascript:void(0);" class="link pull-right">Xem chi tiết >></a>
+								</div>
+							</div>
+						</li>
+						{% endfor %} 
+					</ul>
+					<div class="wrap-pagi pull-right">
+			        	{% include "block/_pagination.html" %}
+			        </div>
+				</div>
+				{% include "block/_block-news-detail.html" %}	
+				<div class="block thienhoa-images">
+					<h3 class="title-line">Hình ảnh vể Điện máy và nội thất Thiên Hòa</h3>
+					<a href="javascript:void(0);" title="" class="btn1-prev btn-prev"><span class="fa fa-angle-left"></span></a>
+					<div class="gallery">
+						<div id="owl-buy1">
+				            <div class="item">
+				                <div class="box-img">
+				                	<img src="assets/images/upload/img-th1.png" alt="thien hoa">
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="box-img">
+				                	<img src="assets/images/upload/img-th2.png" alt="thien hoa">
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="box-img">
+				                	<img src="assets/images/upload/img-th3.png" alt="thien hoa">
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="box-img">
+				                	<img src="assets/images/upload/img-th4.png" alt="thien hoa">
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="box-img">
+				                	<img src="assets/images/upload/img-th1.png" alt="thien hoa">
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="box-img">
+				                	<img src="assets/images/upload/img-th2.png" alt="thien hoa">
+				                </div>
+				            </div>
+				            <div class="item">
+				               <div class="box-img">
+				                	<img src="assets/images/upload/img-th3.png" alt="thien hoa">
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="box-img">
+				                	<img src="assets/images/upload/img-th4.png" alt="thien hoa">
+				                </div>
+				            </div>
+				        </div>	
+					</div>
+					<a href="javascript:void(0);" title="" class="btn1-next btn-next"><span class="fa fa-angle-right"></span></a>    
+				</div>	
+			</div>
+		</section>
+        <!-- start block banner bootom-->
+        <section class="block-banner-bottom">
+            <div class="row">
+                <div class="col-md-5 padding1"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom.jpg" alt="" class="img-responsive"></a></div>
+                <div class="col-md-7 padding2"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom1.jpg" alt="" class="img-responsive"></a></div>
+            </div>
+        </section>
+        <!-- end block banner bottom-->
+	</div>
+</main>
+{% include "block/_block-order-detail-view.html" %}
+{% include "block/_modal-add-success.html" %}
+{% endblock %}

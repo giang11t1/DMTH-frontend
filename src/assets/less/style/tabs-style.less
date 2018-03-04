@@ -1,0 +1,115 @@
+.block-tabs {
+    width: 100%;
+    display: inline-block;
+}
+
+/* Clearfix */
+
+.tab-container {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid @primary-color;
+    .title-block-tab {
+        display: inline-block;
+        float: left;
+        font-size: 16px;
+        font-family: 'fontbold';
+        text-transform: uppercase;
+        color: #fff;
+        padding: 10px;
+        min-width: 100px;
+        text-align: center;
+        background: @primary-color;
+        position: relative;
+        top: 0px;
+        a {
+            color: #fff;
+            &:hover {
+                color: #fff;
+            }
+        }
+        &:after {
+            position: absolute;
+            top: 0;
+            right: -15px;
+            width: 0;
+            height: 0;
+            content: '';
+            border-top: 19px solid transparent;
+            border-left: 15px solid @primary-color;
+            border-bottom: 18px solid transparent;
+        }
+    }
+    .tab-links {
+        display: inline-block;
+        float: left;
+        margin-bottom: 0;
+        padding-left: 35px;
+        margin-top: 8px;
+    }
+    .link {
+        float: right;
+        margin-top: 8px;
+    }
+}
+.tab-links:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.tab-links li {
+    float: left;
+    list-style: none;
+    &.active,
+    &:hover {
+        a {
+            border-bottom: 5px solid @primary-color;
+        }
+    }
+}
+
+.tab-links a {
+    padding: 3px 15px;
+    display: inline-block;
+    border-radius: 3px 3px 0px 0px;
+    background: #fff;
+    font-size: 14px;
+    color: @text-color-1;
+    font-family: 'fontregular';
+    transition: all linear 0.15s;
+    padding-top: 0;
+}
+
+.tab-links a:hover {
+    text-decoration: none;
+}
+
+li.active a,
+li.active a:hover {
+    background: #fff;
+    color: @primary-color;
+    font-family: 'fontbold';
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding: 15px 0;
+    border-radius: 3px;
+    background: #fff;
+    padding-bottom: 0;
+    div.tab {
+        display: none;
+        border-bottom: none;
+        .wrap {
+            width: 102.5%;
+            display: inline-block;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+    }
+}
+
+.tab.active {
+    display: block;
+}

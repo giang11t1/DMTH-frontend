@@ -1,0 +1,47 @@
+{% set current_page = 'cart-finish' %} {% extends "layout/_layout.html" %} {% block page-container %}
+<div class="banner"></div>
+<main class="main-cart">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>dienmaythienhoa.vn</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>Đặt hàng</a></li>
+        </ol>
+	    <!-- main empty shopping  -->
+	    <div class="wrap-error">
+	        <div class="col-md-6 left-error">
+	            <img src="assets/images/gif-bear.gif" alt="">
+	        </div>
+	        <div class="col-md-6 right-error">
+	            <h1>404</h1>
+	            <h2>chúng tôi không tìm thấy trang bạn yêu cầu</h2>
+	            <p class="decript">Có vẻ như trang này không tồn tại hoặc sản phẩm đã bị xóa khỏi website. Bạn có thể thử những liên kết sau:</p>
+	            <ul class="list-link">
+	                <li class="item-link">
+	                    <a href="#" class="home">
+	                        <p>Về trang chủ</p>
+	                    </a>
+	                </li>
+	                <li class="item-link">
+	                    <a href="#" class="top">
+	                        <p>Top 10 sản phẩm bán chạy</p>
+	                    </a>
+	                </li>
+	                <li class="item-link">
+	                    <a href="#" class="favorite">
+	                        <p>Top thương hiệu yêu thích nhất</p>
+	                    </a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	    <!-- start block banner bootom-->
+	    <section class="block-banner-bottom">
+	        <div class="row">
+	            <div class="col-md-5 padding1"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom.jpg" alt="" class="img-responsive"></a></div>
+	            <div class="col-md-7 padding2"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom1.jpg" alt="" class="img-responsive"></a></div>
+	        </div>
+	    </section>
+	    <!-- end block banner bottom-->
+	</div>
+</main>
+{% endblock %}

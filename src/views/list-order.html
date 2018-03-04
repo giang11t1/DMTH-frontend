@@ -1,0 +1,83 @@
+{% set current_page = 'list-order' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<div class="banner"></div>
+<main class="main-cart list-order">
+	<div class="container">
+		<ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>dienmaythienhoa.vn</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>Kiểm tra đơn hàng</a></li>
+        </ol>
+        <!-- end breadcrum -->
+        <div class="input-checking">
+        	<div class="text">
+        		<label for="">Bạn vui lòng số điện thoại: </label>
+        		<span class="note">(Số điện thoại bạn dùng để mua hàng)</span>
+        	</div>
+        	<input type="text" class="form-control">
+        	<button class="btn btn-primary">Xem danh sách đơn hàng đơn hàng</button>
+        </div>
+		<!-- end checking -->
+		<div class="list-order-table">
+			<p>Danh sách đơn hàng được đặt mua tại Trung Tâm Điện Máy và Nội Thất Thiên Hòa, thông qua số điện thoại: <b class="blue">0165.5.789.456</b></p>
+			<table class="list-order table table-striped">
+				<tbody>
+					<tr>
+						<th class="text-center">Mã đơn hàng</th>
+						<th class="text-center">Chi tiết đơn hàng</th>
+						<th class="text-center">Ngày đặt hàng</th>
+						<th class="text-center">Thanh toán</th>
+						<th class="text-center">Trạng thái</th>
+					</tr>
+					{% for x in [1,2,3,4,5,6,7,8,9] %}
+					<tr>
+						<td class="col-first text-center"><a href="javascript:void(0);">#0125687945</a></td>
+						<td class="second-col text-center">Smart Tivi Samsung 55 Inch UA55MU6100 KXXV LED 4K</td>
+						<td class="text-center">11:05:22 - 22/11/2017</td>
+						<td class="text-center">15.000.000đ</td>
+						<td class="text-center">Đã xác nhận</td>
+					</tr>
+					{% endfor %} 
+				</tbody>
+			</table>
+			<div class="bottoom_table">
+                <div class="total_submit">
+                	<strong>Tổng cộng: <span class="blue">10</span> đơn hàng</strong>
+                	<strong>Tổng tiền: <span class="blue">55.000.000đ</span></strong>
+                </div>
+                <div class="page pagination">
+                    <div class="wrap">
+                        <div class="left">
+                            <i class="fa fa-angle-double-left">&nbsp</i>
+                            <div> <p>Trước</p></div>
+                        </div>
+                        <p class="display">Trang 1/4</p>
+                        <div class="right">
+                            <div><p>Sau</p></div>
+                            <i class="fa fa-angle-double-right">&nbsp</i>
+                        </div>
+                    </div>                            
+                    <div class="per_page">
+                        <select class="form-control">
+                            <option>10 dòng/ Trang</option>
+                            <option>20 dòng/ Trang</option>
+                            <option>30 dòng/ Trang</option>
+                            <option>40 dòng/ Trang</option>
+                        </select>
+                        <i class="fa fa-angle-down">&nbsp</i>
+                    </div>
+                </div>
+            </div>			
+		</div>	
+		<!-- start block banner bootom-->
+        <section class="block-banner-bottom">
+            <div class="row">
+                <div class="col-md-5 padding1"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom.jpg" alt="" class="img-responsive"></a></div>
+                <div class="col-md-7 padding2"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom1.jpg" alt="" class="img-responsive"></a></div>
+            </div>
+        </section>
+        <!-- end block banner bottom-->
+	</div>
+</main>
+{% include "block/_block-order-detail-view.html" %}
+{% endblock %}

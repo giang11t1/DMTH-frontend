@@ -1,0 +1,33 @@
+{% set current_page = 'cart-finish' %} 
+{% extends "layout/_layout.html" %} 
+{% block page-container %}
+<div class="banner"></div>
+<main class="main-cart">
+	<div class="container">
+		<ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>dienmaythienhoa.vn</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0);" title>Đặt hàng</a></li>
+        </ol>
+        <!-- end breadcrum -->
+        <div class="content-cart-finish">
+        	<div class="text-center">
+        		<img src="assets/images/img-success.png" alt="sucess order">
+        	</div>
+        	<h2 class="title-cart main-title">Đơn hàng của bạn đã được đặt thành công</h2>
+        	<p>Cảm ơn bạn đã đặt hàng tại <b>Trung Tâm Điện Máy Và Nội Thất Thiên Hòa</b>. Mã đơn hàng của bạn là <b class="blue">ABT12345TK</b></p>
+        	<p>Các sản phẩm bạn đã đặt bao gồm: </p>
+
+        	{% include "block/_block-cart-finish.html" %}
+			<button class="btn btn-primary">Tiếp tục mua hàng</button>
+        </div>
+        <!-- start block banner bootom-->
+        <section class="block-banner-bottom">
+            <div class="row">
+                <div class="col-md-5 padding1"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom.jpg" alt="" class="img-responsive"></a></div>
+                <div class="col-md-7 padding2"><a href="javascript:void(0);" title="" target="_blank"><img src="assets/images/banner/banner-bottom1.jpg" alt="" class="img-responsive"></a></div>
+            </div>
+        </section>
+        <!-- end block banner bottom-->
+    </div>
+</main>
+{% endblock %}
